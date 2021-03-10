@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
+ul {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+
+header {
+	background: #fff;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+}
+
+.nav-header h2 {
+	font-size: 1.8rem;
+	height: 40px;
+}
+.surname {
+	color: rgba(108, 108, 243, 0.795);
+}
+.nav-toggle {
+	font-size: 1.8rem;
+	color: rgba(108, 108, 243, 0.842);
+	background-color: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+.nav-toggle:hover {
+	color: rgba(41, 41, 138, 0.993);
+	/* transform: rotate(90deg); */
+}
+
+.toggle-rotate {
+	transform: rotate(90deg);
+}
+
+.nav-lists a {
+	color: rgb(50, 77, 103);
+	font-size: 1rem;
+	text-transform: capitalize;
+	letter-spacing: 0.1rem;
+	display: block;
+	padding: 0.7rem 1rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.nav-lists a:hover {
+	color: rgb(236, 237, 240);
+	background-color: rgba(159, 164, 233, 0.815);
+	padding-left: 1.5rem;
+}
+
+.nav-lists {
+	height: 0;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+}
+.show-nav-lists {
+	height: 10rem;
+}
+
+.social-icons {
+	display: none;
+}
+
+@media screen and (min-width: 800px) {
+	.nav {
+		max-width: 1170px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1rem;
+	}
+	.nav-header {
+		padding: 0;
+	}
+
+	.nav-toggle {
+		display: none;
+	}
+	.nav-lists {
+		height: auto;
+		display: flex;
+	}
+
+	.nav-lists a {
+		padding: 0;
+		margin: 0 0.5rem;
+	}
+	.nav-lists a:hover {
+		padding: 0;
+		color: rgb(87, 157, 223);
+		background-color: transparent;
+	}
+	.social-icons {
+		display: flex;
+	}
+	.social-icons a {
+		font-size: 1rem;
+		margin: 0 0.5rem;
+		color: #49a6e9;
+		transition: all 0.3s ease-in-out;
+	}
+
+	i.fab {
+		display: inline-block;
+		border-radius: 60px;
+		box-shadow: 0px 0px 2px #888;
+		padding: 0.3em 0.4em;
+	}
+
+	.social-icons a:hover {
+		color: #8bcbf9;
+	}
+}
